@@ -1,0 +1,194 @@
+/* font-family: "Fira Code", monospace;
+font-family: "Poppins", serif;
+font-family: "Plus Jakarta Sans", serif; */
+:root {
+    --black: #000;
+    --white: #fff;
+    --green: #78CC6D;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+
+/* ++++++++++++++++++++++++++++++++++ 
+    Navbar CSS
++++++++++++++++++++++++++++++++++++++ */
+.navbar{
+    margin-left: auto;
+}
+.navbar .singleLink {
+    width: 70px;
+    height: 70px;
+    border-radius: 50rem;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barLink .barbox {
+    width: 30px;
+    height: 40px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.barLink .barbox .bar1 {
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: var(--white);
+    transition: 0.3s all ease;
+}
+
+.barLink .barbox .bar2 {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--white);
+    transition: 0.3s all ease;
+}
+
+.barLink .barbox .bar3 {
+    display: block;
+    width: 75%;
+    height: 1px;
+    background-color: var(--white);
+    transition: 0.3s all ease;
+}
+
+.barLink:hover .barbox .bar1,
+.barLink:hover .barbox .bar2,
+.barLink:hover .barbox .bar3 {
+    width: 100%;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++ 
+    Profile Card CSS
++++++++++++++++++++++++++++++++++++++ */
+.profileCard {
+    background-color: var(--black);
+    border-radius: 35px 0 35px 35px;
+}
+
+.profileCard .img-box {
+    margin-bottom: 20px;
+    padding: 50px 50px 0 50px;
+}
+
+.profileCard .img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px 0 30px 30px;
+}
+
+.profileCard .content-box {
+    padding: 0px 50px 0 50px;
+}
+
+.profileCard .content-box .role {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--green);
+    margin-bottom: 10px;
+    font-family: "Fira Code", monospace;
+}
+
+.profileCard .content-box .name {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 13px;
+}
+
+.profileCard .content-box .social-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.profileCard .content-box .social-box a {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.300);
+    overflow: hidden;
+    color: var(--white);
+}
+
+.profileCard .content-box .social-box a:hover {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.profileCard .content-box .social-box a svg {
+    transition: 0.3s all ease;
+}
+
+.profileCard .content-box .social-box a:hover svg {
+    transform: scale(1.3);
+}
+
+.profileCard .button-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 0 0 35px 35px;
+    overflow: hidden;
+    padding-top: 1px;
+    gap: 1px;
+}
+
+.profileCard .button-box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 60px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.profileCard .button-box a svg {
+    transform: scale(1.3);
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.profileCard .button-box a:hover {
+    background-color: var(--green);
+    color: var(--black);
+}
+
+.profileCard .button-box a:hover svg {
+    transform: scale(1.5);
+    fill: var(--black);
+}
+
+
+/* ++++++++++++++++++++++++++++++++++ 
+    Description Main Side CSS
++++++++++++++++++++++++++++++++++++++ */
+.descriptionMain{
+    background-color: var(--black);
+    border-radius: 0 35px 35px 35px;
+    width: 100%;
+    min-height: 80vh;
+}
