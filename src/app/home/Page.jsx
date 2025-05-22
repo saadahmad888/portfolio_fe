@@ -6,8 +6,8 @@ import React from 'react'
 const Home = () => {
     return (
         <>
-            <main>
-                <div className="container">
+            <main className='homePage'>
+                <div className="container custom-container">
                     <div className="row">
                         <div className="col-lg-1 col-md-1 col-12">
                             <Navbar />

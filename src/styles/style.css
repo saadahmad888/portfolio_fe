@@ -19,9 +19,10 @@ a {
 /* ++++++++++++++++++++++++++++++++++ 
     Navbar CSS
 +++++++++++++++++++++++++++++++++++++ */
-.navbar{
+.navbar {
     margin-left: auto;
 }
+
 .navbar .singleLink {
     width: 70px;
     height: 70px;
@@ -70,6 +71,13 @@ a {
 .barLink:hover .barbox .bar2,
 .barLink:hover .barbox .bar3 {
     width: 100%;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .homePage .container.custom-container {
+        max-width: 90%;
+    }
 }
 
 
@@ -186,7 +194,7 @@ a {
 /* ++++++++++++++++++++++++++++++++++ 
     Description Main Side CSS
 +++++++++++++++++++++++++++++++++++++ */
-.descriptionMain{
+.descriptionMain {
     background-color: var(--black);
     border-radius: 0 35px 35px 35px;
     width: 100%;
